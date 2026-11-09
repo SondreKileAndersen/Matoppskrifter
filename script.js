@@ -185,7 +185,7 @@ function setupSearch() {
 
 async function shareRecipe() {
   const shareData = {
-    title: "Krydret søtpotetgryte | Grønn Kjøkken",
+    title: "Krydret søtpotetgryte | Matoppskrifter",
     text: "Prøv denne varme, grønne søtpotetgryten!",
     url: location.href.split("#")[0]
   };
