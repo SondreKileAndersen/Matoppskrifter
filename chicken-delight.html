@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="nb">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1f5e42">
+  <meta name="description" content="Chicken Delight: saftig kylling med ovnsbakt søtpotet, smørmyk grønnkål og en enkel, kremet saus med Dijon, estragon og soyasaus. Klar på cirka 35 minutter.">
+  <title>Chicken Delight – kylling med søtpotet og estragonsaus | Matoppskrifter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <style>
+    :root{--green:#1f5e42;--deep:#173f2f;--bg:#fafbf8;--cream:#edf3e9;--line:#dce6dc;--ink:#20382b;--muted:#617567}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--bg);font:16px/1.65 'DM Sans',Arial,sans-serif}
+    .container{max-width:1160px;padding:0 24px;margin:auto}a{color:inherit}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #81b66e;outline-offset:3px}
+    .banner{background:var(--green);color:#fff;text-align:center;letter-spacing:.17em;font-size:10px;font-weight:700;padding:9px}
+    header{background:#fff;border-bottom:1px solid var(--line)}.header{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:82px}
+    .brand{font:700 27px 'Fraunces',Georgia,serif;color:var(--green);text-decoration:none;letter-spacing:-.04em}
+    nav{display:flex;flex-wrap:wrap;gap:20px}nav a{text-decoration:none;font-weight:700;font-size:13px;color:var(--deep)}nav a:hover{text-decoration:underline}
+    .crumb{padding:24px 0;color:var(--muted);font-size:13px}.crumb a{color:var(--green)}
+    .hero{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:60px;padding:16px 0 72px}
+    .eyebrow,.section-label{color:var(--green);font-weight:800;font-size:11px;letter-spacing:.15em;text-transform:uppercase}
+    h1,h2,h3{font-family:'Fraunces',Georgia,serif;line-height:1.2}h1{font-size:clamp(44px,5.4vw,72px);font-weight:600;letter-spacing:-.045em;margin:14px 0 22px}
+    h1 em{font-weight:500;color:#3b8053}.intro{max-width:560px;color:#526b59;font-size:17px;line-height:1.85}
+    .facts{display:flex;gap:11px;flex-wrap:wrap;margin:25px 0 29px}.fact{background:var(--cream);padding:9px 16px;border-radius:40px;color:var(--deep);font-size:13px;font-weight:700}
+    .btn{display:inline-block;background:var(--green);color:#fff;text-decoration:none;border:0;border-radius:7px;padding:12px 19px;font:700 14px 'DM Sans',sans-serif;cursor:pointer}
+    .btn:hover{background:var(--deep)}.btn--light{background:#e8efe8;color:var(--green);margin-left:7px}.btn--light:hover{background:#d7e7d7}
+    .hero__photo{min-width:0}.hero__photo img{display:block;width:100%;height:min(62vw,580px);min-height:420px;object-fit:cover;border-radius:230px 230px 13px 13px;box-shadow:0 18px 48px #173f2f1a}
+    .hero__caption{color:#718376;font-size:12px;margin-top:10px;text-align:right}
+    .layout{display:grid;grid-template-columns:minmax(280px,365px) minmax(0,1fr);gap:72px;align-items:start;padding:0 0 88px}
+    .card{background:white;border:1px solid var(--line);border-radius:14px;padding:30px;box-shadow:0 8px 35px #1f5e4208}
+    h2{font-size:clamp(29px,3vw,41px);font-weight:600;letter-spacing:-.045em;margin:0 0 24px}
+    .group{padding:17px 0;border-top:1px solid var(--line)}.group h3{font:800 14px 'DM Sans',sans-serif;margin:0 0 14px;color:var(--green)}
+    .ingredient{display:flex;align-items:flex-start;gap:11px;font-size:14px;margin:11px 0;cursor:pointer;line-height:1.5}.ingredient input{accent-color:var(--green);width:16px;height:16px;margin-top:3px;flex-shrink:0}.ingredient:has(input:checked) span{text-decoration:line-through;color:#96a69b}
+    .note{font-size:12px;color:var(--muted);margin:0 0 19px}.steps-intro{color:var(--muted);margin:-6px 0 19px;font-size:15px}
+    .step{display:grid;grid-template-columns:52px 1fr;gap:15px;padding:24px 0;border-top:1px solid var(--line)}
+    .step .num{font:600 30px 'Fraunces',serif;color:#96b9a0}.step h3{font-size:21px;margin:0 0 8px;font-weight:600}.step p{margin:0;color:#4c6356;font-size:14px;line-height:1.8}
+    .tip{background:#eaf2e9;border-radius:13px;padding:25px;margin-top:26px}.tip h3{font-size:21px;margin:0 0 8px}.tip p{margin:0;color:#4c6356;font-size:14px}
+    .footer{border-top:1px solid var(--line);background:white;padding:35px 0;color:var(--muted);font-size:13px}.footer__inner{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.footer a{color:var(--green)}
+    @media(max-width:850px){.hero{gap:30px}.layout{gap:35px}}
+    @media(max-width:710px){.container{padding:0 18px}.header{min-height:70px;align-items:flex-start;flex-direction:column;justify-content:center;gap:4px;padding-top:12px;padding-bottom:12px}nav{gap:15px}nav a{font-size:12px}
+      .hero{grid-template-columns:1fr;padding:10px 0 42px;gap:23px}.hero__photo img{height:430px;min-height:0}.layout{grid-template-columns:1fr;gap:34px;padding-bottom:60px}.card{padding:25px}.step{grid-template-columns:38px 1fr;gap:10px}}
+    @media(max-width:390px){.hero__photo img{height:350px}.btn--light{margin-left:0;margin-top:9px}}
+    @media print{.banner,header,.crumb,.hero__photo,.btn,.footer{display:none!important}.container{max-width:none}.hero{display:block;padding:0 0 14px}.hero h1{font-size:36px}.layout{display:block;padding:0}.card{box-shadow:none;border:0;padding:0;margin-bottom:20px}.step{break-inside:avoid;padding:12px 0}.tip{break-inside:avoid}body{background:#fff}}
+  </style>
+</head>
+<body>
+  <div class="banner">GODE RÅVARER. GODE OPPSKRIFTER.</div>
+  <header><div class="container header"><a class="brand" href="index.html">Matoppskrifter</a><nav aria-label="Navigasjon"><a href="index.html">Alle oppskrifter</a><a href="#ingredienser">Ingredienser</a><a href="#fremgangsmate">Slik gjør du</a></nav></div></header>
+  <main class="container">
+    <div class="crumb"><a href="index.html">Oppskrifter</a> / Chicken Delight</div>
+    <section class="hero" aria-labelledby="recipe-title">
+      <div>
+        <div class="eyebrow">ENKEL OG SMAKFULL MIDDAG</div>
+        <h1 id="recipe-title">Chicken <em>Delight</em></h1>
+        <p class="intro">Saftig kylling med ovnsbakte søtpotetterninger, mør grønnkål og en kremet estragonsaus med Dijon-sennep og soyasaus. En god hverdagsmiddag som nesten lager seg selv.</p>
+        <div class="facts"><span class="fact">2 porsjoner</span><span class="fact">Ca. 35 minutter</span><span class="fact">200 °C i ovnen</span></div>
+        <a class="btn" href="#ingredienser">Se oppskriften</a>
+        <button class="btn btn--light" type="button" onclick="window.print()">Skriv ut</button>
+      </div>
+      <div class="hero__photo"><img src="images/chicken-delight.webp" alt="Stekt kyllingfilet i skiver med søtpotetterninger og grønnkål på et keramikkfat" width="420" height="560"><div class="hero__caption">Chicken Delight med søtpotet og grønnkål</div></div>
+    </section>
+
+    <div class="layout">
+      <aside id="ingredienser" class="card" aria-labelledby="ingredients-title">
+        <p class="section-label">Dette trenger du</p>
+        <h2 id="ingredients-title">Ingredienser</h2>
+        <p class="note">Til 2 porsjoner. Kryss av ingrediensene underveis.</p>
+        <div class="group"><h3>Kylling</h3>
+          <label class="ingredient"><input type="checkbox"><span>2 kyllingfileter</span></label>
+          <label class="ingredient"><input type="checkbox"><span>Salt, pepper og eventuelt annet krydder etter smak</span></label>
+        </div>
+        <div class="group"><h3>Kremet estragonsaus</h3>
+          <label class="ingredient"><input type="checkbox"><span>1,5 dl Gryr eller fløte</span></label>
+          <label class="ingredient"><input type="checkbox"><span>1 ss Dijon-sennep</span></label>
+          <label class="ingredient"><input type="checkbox"><span>1 ss soyasaus</span></label>
+          <label class="ingredient"><input type="checkbox"><span>1 toppet ss estragon</span></label>
+          <label class="ingredient"><input type="checkbox"><span>½ buljongterning</span></label>
+        </div>
+        <div class="group"><h3>Ovnsbakt søtpotet</h3>
+          <label class="ingredient"><input type="checkbox"><span>1 søtpotet</span></label>
+          <label class="ingredient"><input type="checkbox"><span>Litt olje til formen</span></label>
+          <label class="ingredient"><input type="checkbox"><span>6 små terninger smør</span></label>
+          <label class="ingredient"><input type="checkbox"><span>Salt og pepper</span></label>
+        </div>
+        <div class="group"><h3>Grønnkål</h3>
+          <label class="ingredient"><input type="checkbox"><span>1 pose grønnkål</span></label>
+          <label class="ingredient"><input type="checkbox"><span>1 hvitløksfedd</span></label>
+          <label class="ingredient"><input type="checkbox"><span>Litt sitronsaft</span></label>
+        </div>
+      </aside>
+      <article id="fremgangsmate" aria-labelledby="steps-title">
+        <p class="section-label">Fra råvarer til middag</p>
+        <h2 id="steps-title">Slik gjør du</h2>
+        <p class="steps-intro">Begynn med søtpoteten, og lag resten mens den står i ovnen.</p>
+        <div class="step"><div class="num">01</div><div><h3>Sett på ovnen og kutt søtpoteten</h3><p>Forvarm ovnen til 200 °C. Skrell søtpoteten hvis du ønsker, og skjær den i små, jevne terninger.</p></div></div>
+        <div class="step"><div class="num">02</div><div><h3>Stek søtpoteten</h3><p>Ha litt olje i bunnen av en ildfast form. Fordel søtpotetterningene i formen, legg seks små smørterninger oppå og krydre med salt og pepper. Stek i cirka 30 minutter, eller til terningene er myke.</p></div></div>
+        <div class="step"><div class="num">03</div><div><h3>Rør sammen sausen</h3><p>Ha Gryr eller fløte, Dijon-sennep, soyasaus, estragon og en halv buljongterning i en liten kjele. Rør sammen, kok forsiktig opp og la sausen småputre noen minutter til buljongen er oppløst. Hold den varm på lav varme.</p></div></div>
+        <div class="step"><div class="num">04</div><div><h3>Tilbered kyllingen</h3><p>Krydre de to kyllingfiletene som du liker, og tilbered dem på ønsket måte – for eksempel i stekepanne. Sørg for at kyllingen er helt gjennomstekt, gjerne med en kjernetemperatur på 75 °C. La den hvile litt før du skjærer den i skiver.</p></div></div>
+        <div class="step"><div class="num">05</div><div><h3>Gjør grønnkålen myk</h3><p>Fjern harde stilker fra grønnkålen og ha bladene i en stor gryte. Tilsett finhakket hvitløk og en skvett sitronsaft. Varm på middels varme mens du rører av og til, til grønnkålen faller sammen og blir myk. Tilsett litt vann eller olje om nødvendig, så den ikke svir seg.</p></div></div>
+        <div class="step"><div class="num">06</div><div><h3>Legg opp og server</h3><p>Fordel kylling, ovnsbakt søtpotet og grønnkål på tallerkener. Hell den varme estragonsausen over eller server den ved siden av.</p></div></div>
+        <div class="tip"><h3>Tips for å spare tid</h3><p>La søtpoteten stå i ovnen mens du gjør klar sausen, steker kyllingen og mykner grønnkålen. Da kan hele middagen være ferdig på omtrent 35 minutter.</p></div>
+      </article>
+    </div>
+  </main>
+  <footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Matoppskrifter</span><div><a href="index.html">Krydret søtpotetgryte</a> · <a href="lasagne.html">Hjemmelaget lasagne</a></div></div></footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
