@@ -233,3 +233,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #87b9
   .step p{font-size:10pt}
   .step h3{font-size:12pt}
 }
+/* Ryddet bort dekorative sopp-/blomstermotiver. */
+.quick-note{gap:12px}
+.finish-card{gap:0}
+.inline-tip{gap:0}
