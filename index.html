@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1f5e42">
+  <meta name="description" content="Lag en smakfull, krydret søtpotetgryte med quinoa, bønner og friske toppinger. Se ingredienser, fremgangsmåte og tilpass antall porsjoner.">
+  <title>Krydret søtpotetgryte | Grønn Kjøkken</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#hovedinnhold">Hopp til innhold</a>
+  <div class="announcement"><span class="announcement__dot" aria-hidden="true"></span> GODE RÅVARER. GRØNNERE HVERDAG. <span class="announcement__dot" aria-hidden="true"></span></div>
+  <header class="site-header" id="toppen">
+    <div class="header-inner container">
+      <a class="brand" href="#toppen" aria-label="Grønn Kjøkken – til toppen">
+        <span class="brand__icon" aria-hidden="true"><svg viewBox="0 0 46 46" fill="none"><path d="M22.9 36.8c-1.3-8.1.8-15.1 7.6-21.3" stroke="currentColor" stroke-width="2.7" stroke-linecap="round"/><path d="M23.5 28C10.6 28 8.5 18.7 9 10.4 17.6 10.5 25.1 14 23.5 28Z" fill="currentColor" opacity=".9"/><path d="M25.9 25.5C27.5 11.8 34.2 9 41.2 9.4c-.3 9.8-4.6 16.8-15.3 16.1Z" fill="currentColor"/><path d="M13.6 15.3c3.8 2.8 6.5 5.7 9.8 10" stroke="#fff" stroke-width="1.5" opacity=".7"/><path d="M36.8 14.4c-4.8 3.4-7.4 6.5-10.4 11" stroke="#fff" stroke-width="1.5" opacity=".7"/></svg></span>
+        <span class="brand__words"><strong>grønn</strong><small>KJØKKEN</small></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Hovedmeny">
+        <a class="nav-link nav-link--active" href="#oppskrift">Oppskrifter</a>
+        <a class="nav-link" href="#ingredienser">Ingredienser</a>
+        <a class="nav-link" href="#slik-gjor-du">Slik gjør du</a>
+        <a class="nav-link" href="#mer-inspirasjon">Inspirasjon</a>
+      </nav>
+      <div class="header-actions">
+        <button id="searchToggle" class="icon-button header-search-toggle" type="button" aria-expanded="false" aria-controls="searchPanel" aria-label="Søk på siden">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.7" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4.6 4.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+        <button id="headerFavorite" class="icon-button header-heart" type="button" aria-label="Lagre oppskrift" aria-pressed="false">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.5 9c0 4.6-8.5 10-8.5 10S3.5 13.6 3.5 9A4.5 4.5 0 0 1 12 6.9 4.5 4.5 0 0 1 20.5 9Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        </button>
+        <button id="menuToggle" class="icon-button mobile-toggle" type="button" aria-label="Åpne meny" aria-expanded="false" aria-controls="mobileNav">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </div>
+    <form id="searchPanel" class="search-panel container" role="search" hidden>
+      <label for="siteSearch">Hva leter du etter?</label>
+      <div class="search-panel__row"><input id="siteSearch" type="search" placeholder="Søk etter ingrediens eller fremgangsmåte …" autocomplete="off"><button class="btn btn--dark" type="submit">Søk</button></div>
+      <p id="searchResult" role="status" aria-live="polite">Søk i denne oppskriften.</p>
+    </form>
+    <nav id="mobileNav" class="mobile-nav" aria-label="Mobilmeny" hidden>
+      <a href="#oppskrift">Oppskrifter</a><a href="#ingredienser">Ingredienser</a><a href="#slik-gjor-du">Slik gjør du</a><a href="#mer-inspirasjon">Inspirasjon</a>
+    </nav>
+  </header>
+
+  <main id="hovedinnhold">
+    <div class="container breadcrumbs" aria-label="Brødsmuler"><a href="#toppen">Hjem</a><span aria-hidden="true">/</span><a href="#mer-inspirasjon">Oppskrifter</a><span aria-hidden="true">/</span><a href="#oppskrift">Vegetar</a><span aria-hidden="true">/</span><span aria-current="page">Krydret søtpotetgryte</span></div>
+
+    <section class="hero container" id="oppskrift" aria-labelledby="recipe-title">
+      <div class="hero__copy">
+        <div class="eyebrow"><span class="eyebrow__leaf" aria-hidden="true">✦</span> SMAKFULL VEGETARMAT</div>
+        <h1 id="recipe-title">Krydret<br><em>søtpotetgryte</em></h1>
+        <p class="hero__lead">En varmende, fargerik gryte full av søtpotet, quinoa og bønner. Topp med kremet avokado, litt chili og knasende tortillachips – middag du virkelig kan glede deg til.</p>
+        <div class="recipe-facts" aria-label="Oppskriftsinformasjon">
+          <div class="fact"><span class="fact__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M12 7v5l3.5 2.5" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"/></svg></span><span><strong>40–60 min</strong><small>Tid</small></span></div>
+          <div class="fact"><span class="fact__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 17 9 8l4 6 3-4 4 7H4Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M17 5v4M15 7h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span><span><strong>Middels</strong><small>Vanskelighet</small></span></div>
+          <div class="fact"><span class="fact__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 13h16v1a7 7 0 0 1-7 7h-2a7 7 0 0 1-7-7v-1ZM6 10c1-1 1-2.5 0-4M12 10c1-1 1-2.5 0-4M18 10c1-1 1-2.5 0-4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"/></svg></span><span><strong><span id="factServings">6</span> porsjoner</strong><small>Antall</small></span></div>
+        </div>
+        <div class="hero__buttons">
+          <a class="btn btn--dark" href="#ingredienser">Se oppskriften <span aria-hidden="true">↘</span></a>
+          <button class="btn btn--outline" id="saveRecipe" type="button" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.5 9c0 4.6-8.5 10-8.5 10S3.5 13.6 3.5 9A4.5 4.5 0 0 1 12 6.9 4.5 4.5 0 0 1 20.5 9Z" stroke="currentColor" stroke-width="1.8"/></svg><span id="saveLabel">Lagre oppskrift</span></button>
+        </div>
+      </div>
+      <div class="hero__image-wrap">
+        <img id="heroImage" class="hero__image" src="https://unsplash.com/photos/brPldWJ0jBQ/download?force=true&amp;w=1400" alt="En innbydende skål med krydret søtpotetgryte" fetchpriority="high">
+        <div class="hero__image-tag"><span class="tag-sprout" aria-hidden="true">✳</span><span>100 %<br><strong>matglede</strong></span></div>
+      </div>
+    </section>
+
+    <section class="quick-note container" aria-label="Tips fra kjøkkenet"><div class="quick-note__icon" aria-hidden="true">✳</div><p><strong>Lite tips!</strong> Gryten smaker nesten enda bedre dagen etter, når alle smakene har fått satt seg. Perfekt til matpakke!</p><a href="#kokketips">Flere tips <span aria-hidden="true">↗</span></a></section>
+
+    <div class="recipe-layout container">
+      <aside class="ingredients" id="ingredienser" aria-labelledby="ingredients-title">
+        <div class="ingredients__top"><div><p class="section-kicker">DETTE TRENGER DU</p><h2 id="ingredients-title">Ingredienser</h2></div><span class="ingredients__drawing" aria-hidden="true">✳</span></div>
+        <div class="servings-control"><span>Antall porsjoner</span><div class="stepper" role="group" aria-label="Velg antall porsjoner"><button id="minusServing" type="button" aria-label="Færre porsjoner">−</button><output id="servingsOutput" aria-live="polite">6</output><button id="plusServing" type="button" aria-label="Flere porsjoner">+</button></div></div>
+        <p class="ingredient-hint">Trykk på ingrediensene etter hvert som du finner dem frem.</p>
+        <div id="ingredientGroups" class="ingredient-groups"></div>
+        <div class="ingredients__actions"><button class="btn btn--dark btn--full" type="button" id="printIngredients"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 9V3h10v6M7 17H4V9h16v8h-3M7 14h10v7H7v-7Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Skriv ut oppskrift</button><button class="text-button" type="button" id="resetChecklist">Fjern avkrysninger</button></div>
+      </aside>
+
+      <article class="instructions" id="slik-gjor-du" aria-labelledby="instructions-title">
+        <p class="section-kicker">FRA RÅVARER TIL MATGLEDE</p>
+        <div class="instructions__head"><h2 id="instructions-title">Slik gjør du</h2><span class="instructions__count">6 enkle steg</span></div>
+        <p class="instructions__intro">Sett på favorittmusikken, finn frem en stor gryte og lag noe skikkelig godt. Her er veien til en mettende, grønn middag.</p>
+        <div class="steps">
+          <section class="step" id="steg-1"><div class="step__number">01</div><div class="step__body"><h3>Start med det aromatiske</h3><p>Finhakk løk og hvitløk. Varm olivenoljen i en romslig gryte på middels varme. Fres løken i 3–4 minutter til den blir myk, og tilsett hvitløken det siste minuttet.</p></div></section>
+          <section class="step" id="steg-2"><div class="step__number">02</div><div class="step__body"><h3>Ha i søtpotet og krydder</h3><p>Skrell søtpotetene og skjær dem i terninger på omtrent 2 cm. Vend dem inn i gryten med spisskummen, paprikapulver og chili. Rør inn tomatpuré, hakkede tomater, quinoa og grønnsakskraft.</p><div class="inline-tip"><span aria-hidden="true">✳</span><p><strong>Kjøkkentips</strong> Har du ikke ferdig grønnsakskraft? Bruk vann og en grønnsaksbuljongterning.</p></div></div></section>
+          <section class="step" id="steg-3"><div class="step__number">03</div><div class="step__body"><h3>La gryten putre</h3><p>Kok opp, legg på lokk og senk varmen. La gryten småkoke i omtrent 20–25 minutter, til søtpotetene er møre og quinoaen gjennomkokt. Rør av og til, og spe med litt vann ved behov.</p></div></section>
+          <section class="step" id="steg-4"><div class="step__number">04</div><div class="step__body"><h3>Klargjør toppingen</h3><p>Skjær avokadoen i skiver, hakk grønn chili og rødløk fint, og finn frem rømme og tortillachips. Det er kontrasten mellom mykt, friskt og sprøtt som gjør denne gryten ekstra god.</p></div></section>
+          <section class="step" id="steg-5"><div class="step__number">05</div><div class="step__body"><h3>Vend inn bønner og grønt</h3><p>Skyll bønnene og ha dem i gryten sammen med grovhakket grønnkål de siste 5 minuttene. Smak til med salt og pepper, og eventuelt litt ekstra chili.</p></div></section>
+          <section class="step step--last" id="steg-6"><div class="step__number">06</div><div class="step__body"><h3>Server og nyt!</h3><p>Fordel gryten i dype skåler. Topp med avokado, chili, rødløk, en klatt rømme og sprø tortillachips. Dryss gjerne over litt frisk koriander.</p></div></section>
+        </div>
+        <div class="finish-card" id="kokketips"><div class="finish-card__flower" aria-hidden="true">✳</div><div><p class="section-kicker">GODT Å VITE</p><h3>Gjør den til din egen</h3><p>Bytt gjerne søtpotet med gresskar, prøv sorte bønner i stedet for kidneybønner, eller dropp rømmen for en helt plantebasert variant.</p></div></div>
+        <div class="article-bottom-actions"><button type="button" class="btn btn--outline" id="printRecipe">Skriv ut oppskrift</button><button type="button" class="btn btn--outline" id="shareRecipe">Del oppskriften <span aria-hidden="true">↗</span></button></div>
+      </article>
+    </div>
+
+    <section class="more-recipes" id="mer-inspirasjon" aria-labelledby="inspiration-title"><div class="container"><div class="more-recipes__heading"><div><p class="section-kicker">FÅ MER MATGLEDE</p><h2 id="inspiration-title">Mer grønn inspirasjon</h2></div><p>Tre gode idéer til neste middag</p></div><div class="recipe-cards">
+      <article class="recipe-card"><div class="recipe-card__photo"><img loading="lazy" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&amp;fit=crop&amp;w=720&amp;q=80" alt="Fargerik vegetarisk salat i en skål"></div><div class="recipe-card__text"><span>FRISKT OG GODT</span><h3>Fargerik grønnsaksbolle</h3><p>En enkel idé til en frisk, grønn middag.</p></div></article>
+      <article class="recipe-card"><div class="recipe-card__photo"><img loading="lazy" src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&amp;fit=crop&amp;w=720&amp;q=80" alt="Matbolle med friske grønnsaker"></div><div class="recipe-card__text"><span>HVERDAGSFAVORITT</span><h3>Grønn bolle med quinoa</h3><p>Masse farger, smak og god energi.</p></div></article>
+      <article class="recipe-card"><div class="recipe-card__photo"><img loading="lazy" src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&amp;fit=crop&amp;w=720&amp;q=80" alt="Friske grønnsaker servert på et fat"></div><div class="recipe-card__text"><span>LETT Å LIKE</span><h3>Sesongens grønnsaker</h3><p>La gode råvarer få spille hovedrollen.</p></div></article>
+    </div></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-main"><a class="brand brand--footer" href="#toppen"><span class="brand__icon" aria-hidden="true">✳</span><span class="brand__words"><strong>grønn</strong><small>KJØKKEN</small></span></a><div><p>Grønn mat. Store smaker.</p><span>Et lite univers for skikkelig god hverdagsmat.</span></div><a href="#toppen" class="back-to-top">Til toppen ↑</a></div><div class="container footer-bottom"><span>© <span id="year"></span> Grønn Kjøkken. Laget med matglede.</span><span>Hovedfoto: <a href="https://unsplash.com/photos/brPldWJ0jBQ" target="_blank" rel="noopener noreferrer">Julietta Watson / Unsplash</a></span></div></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
