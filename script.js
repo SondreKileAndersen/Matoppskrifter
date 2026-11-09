@@ -121,10 +121,8 @@ let isSaved = getStoredFavorite();
 
 function renderFavorite() {
   const saveRecipe = document.getElementById("saveRecipe");
-  const headerFavorite = document.getElementById("headerFavorite");
+  if (!saveRecipe) return;
   saveRecipe.setAttribute("aria-pressed", String(isSaved));
-  headerFavorite.setAttribute("aria-pressed", String(isSaved));
-  headerFavorite.setAttribute("aria-label", isSaved ? "Fjern lagret oppskrift" : "Lagre oppskrift");
   document.getElementById("saveLabel").textContent = isSaved ? "Oppskrift lagret" : "Lagre oppskrift";
 }
 
@@ -133,54 +131,6 @@ function toggleFavorite() {
   storeFavorite(isSaved);
   renderFavorite();
   showToast(isSaved ? "Oppskriften er lagret i denne nettleseren." : "Oppskriften er fjernet fra lagrede.");
-}
-
-function setupMenu() {
-  const menuToggle = document.getElementById("menuToggle");
-  const mobileNav = document.getElementById("mobileNav");
-  menuToggle.addEventListener("click", () => {
-    mobileNav.hidden = !mobileNav.hidden;
-    menuToggle.setAttribute("aria-expanded", String(!mobileNav.hidden));
-    menuToggle.setAttribute("aria-label", mobileNav.hidden ? "Åpne meny" : "Lukk meny");
-  });
-  for (const link of mobileNav.querySelectorAll("a")) {
-    link.addEventListener("click", () => {
-      mobileNav.hidden = true;
-      menuToggle.setAttribute("aria-expanded", "false");
-      menuToggle.setAttribute("aria-label", "Åpne meny");
-    });
-  }
-}
-
-function setupSearch() {
-  const toggle = document.getElementById("searchToggle");
-  const panel = document.getElementById("searchPanel");
-  const input = document.getElementById("siteSearch");
-  const result = document.getElementById("searchResult");
-  toggle.addEventListener("click", () => {
-    panel.hidden = !panel.hidden;
-    toggle.setAttribute("aria-expanded", String(!panel.hidden));
-    if (!panel.hidden) input.focus();
-  });
-
-  panel.addEventListener("submit", (event) => {
-    event.preventDefault();
-    const query = input.value.trim().toLocaleLowerCase("nb-NO");
-    if (!query) {
-      result.textContent = "Skriv inn et søkeord.";
-      return;
-    }
-    const candidates = document.querySelectorAll(".ingredient-item, .step, .hero__lead");
-    const first = [...candidates].find(node => node.textContent.toLocaleLowerCase("nb-NO").includes(query));
-    if (!first) {
-      result.textContent = "Fant ingen treff på «" + input.value.trim() + "» i oppskriften.";
-      return;
-    }
-    result.textContent = "Fant et treff! Viser hvor i oppskriften det står.";
-    first.scrollIntoView({ behavior: "smooth", block: "center" });
-    first.classList.add("search-hit");
-    setTimeout(() => first.classList.remove("search-hit"), 1900);
-  });
 }
 
 async function shareRecipe() {
@@ -218,13 +168,10 @@ function setupHeroImage() {
 document.addEventListener("DOMContentLoaded", () => {
   renderIngredients();
   renderFavorite();
-  setupMenu();
-  setupSearch();
   setupHeroImage();
   document.getElementById("minusServing").addEventListener("click", () => changeServings(-1));
   document.getElementById("plusServing").addEventListener("click", () => changeServings(1));
   document.getElementById("saveRecipe").addEventListener("click", toggleFavorite);
-  document.getElementById("headerFavorite").addEventListener("click", toggleFavorite);
   document.getElementById("printIngredients").addEventListener("click", () => window.print());
   document.getElementById("printRecipe").addEventListener("click", () => window.print());
   document.getElementById("shareRecipe").addEventListener("click", shareRecipe);
